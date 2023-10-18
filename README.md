@@ -53,5 +53,6 @@ To ensure that the project works correctly, make sure to establish the following
   - Echo → Connect to the ATmega32 Input Capture pin
   - GND → Ground
 
-## Thanks and Good Luck
 ## software snap: ![image](https://github.com/Ahmad9h/Distance_measure_system/assets/146341346/d5aa470d-ef66-4bd8-a080-1dcc74cd6fbf)
+
+## Thanks and Good Luck
