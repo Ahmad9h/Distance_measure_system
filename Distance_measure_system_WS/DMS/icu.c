@@ -1,14 +1,12 @@
- /******************************************************************************
+/*****************************************************************************
  *
- * Module: ICU
+ * icu.c
  *
- * File Name: icu.c
+ *  Created on: Oct 15, 2023
  *
- * Description: Source file for the AVR ICU driver
+ *  Author: Ahmad Hamdy
  *
- * Author: Mohamed Tarek
- *
- *******************************************************************************/
+ *****************************************************************************/
 
 #include "icu.h"
 #include "common_macros.h" /* To use the macros like SET_BIT */
