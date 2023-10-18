@@ -1,0 +1,17 @@
+/*****************************************************************************
+ *
+ * buzzer.c
+ *
+ *  Created on: Oct 16, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#include "buzzer.h"
+#include "gpio.h"
+
+void Buzzer_init(void){
+	GPIO_setupPinDirection(BUZZER_PORT_ID, BUZZER_PIN_ID, PIN_OUTPUT);
+	GPIO_setupPinDirection(PORTC_ID, PIN5_ID, PIN_OUTPUT);
+}

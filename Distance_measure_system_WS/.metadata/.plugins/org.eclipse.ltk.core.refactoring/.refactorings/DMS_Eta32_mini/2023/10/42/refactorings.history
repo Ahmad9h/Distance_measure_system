@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;DMS_Eta32_mini/buzzer.h&apos; to &apos;output_unit.h&apos;" description="Rename resource &apos;buzzer.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="buzzer.h" name="output_unit.h" stamp="1697526407735" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;DMS_Eta32_mini/buzzer.c&apos; to &apos;output_unit.c&apos;" description="Rename resource &apos;buzzer.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="buzzer.c" name="output_unit.c" stamp="1697526661303" updateReferences="true"/>
+</session>

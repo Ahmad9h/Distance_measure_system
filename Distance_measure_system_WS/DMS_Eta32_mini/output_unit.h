@@ -1,0 +1,90 @@
+/*****************************************************************************
+ *
+ * output_unit.h
+ *
+ *  Created on: Oct 16, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#ifndef OUTPUT_UNIT
+#define OUTPUT_UNIT
+
+#include "std_types.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define BUZZER_PORT_ID          PORTC_ID
+#define BUZZER_PIN_ID           PIN5_ID
+#define RED_PORT_ID          PORTC_ID
+#define RED_PIN_ID           PIN0_ID
+#define GRN_PORT_ID          PORTC_ID
+#define GRN_PIN_ID           PIN1_ID
+
+/*******************************************************************************
+ *                              Functions Prototypes                           *
+ *******************************************************************************/
+/*
+ * Description :
+ * Configure all output unit pins as output pins
+ */
+void Output_unit_init(void);
+
+/*
+ * Description :
+ * Configure Buzzer pin as output pin
+ */
+void Output_unit_Buzzer_init(void);
+
+/*
+ * Description :
+ * put the Buzzer on work
+ */
+void Output_unit_Buzzer_on(void);
+
+/*
+ * Description :
+ * stop the Buzzer from working
+ */
+void Output_unit_Buzzer_off(void);
+
+/*
+ * Description :
+ * Configure Red led pin as output pin
+ */
+void Output_unit_Red_init(void);
+
+/*
+ * Description :
+ * Turn on the Red led
+ */
+void Output_unit_Red_on(void);
+
+/*
+ * Description :
+ * Turn off the Red led
+ */
+void Output_unit_Red_off(void);
+
+/*
+ * Description :
+ * Configure Green led pin as output pin
+ */
+void Output_unit_Grn_init(void);
+
+/*
+ * Description :
+ * Turn on the Greeen led
+ */
+void Output_unit_Grn_on(void);
+
+/*
+ * Description :
+ * Turn on the Green led
+ */
+void Output_unit_Grn_off(void);
+
+#endif /* OUTPUT_UNIT */

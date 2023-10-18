@@ -1,0 +1,47 @@
+/*****************************************************************************
+ *
+ * output_unit.c
+ *
+ *  Created on: Oct 16, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#include "gpio.h"
+#include "output_unit.h"
+
+void Buzzer_init(void){
+	GPIO_setupPinDirection(BUZZER_PORT_ID, BUZZER_PIN_ID, PIN_OUTPUT);
+}
+
+void Red_init(void){
+	GPIO_setupPinDirection(RED_PORT_ID, RED_PIN_ID, PIN_OUTPUT);
+}
+
+void Grn_init(void){
+	GPIO_setupPinDirection(GRN_PORT_ID, GRN_PIN_ID, PIN_OUTPUT);
+}
+
+void Buzzer_on(void){
+	GPIO_writePin(BUZZER_PORT_ID, BUZZER_PIN_ID, LOGIC_HIGH);
+}
+
+void Red_on(void){
+	GPIO_writePin(RED_PORT_ID, RED_PIN_ID, LOGIC_HIGH);
+}
+
+void Grn_on(void){
+	GPIO_writePin(GRN_PORT_ID, GRN_PIN_ID, LOGIC_HIGH);
+}
+void Buzzer_off(void){
+	GPIO_writePin(BUZZER_PORT_ID, BUZZER_PIN_ID, LOGIC_LOW);
+}
+
+void Red_off(void){
+	GPIO_writePin(RED_PORT_ID, RED_PIN_ID, LOGIC_LOW);
+}
+
+void Grn_off(void){
+	GPIO_writePin(GRN_PORT_ID, GRN_PIN_ID, LOGIC_LOW);
+}

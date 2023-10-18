@@ -1,0 +1,42 @@
+/*****************************************************************************
+ *
+ * buzzer.c
+ *
+ *  Created on: Oct 16, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#ifndef BUZZER
+#define BUZZER
+
+#include "std_types.h"
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define BUZZER_PORT_ID          PORTC_ID
+#define BUZZER_PIN_ID           PIN5_ID
+
+/*
+ * Description :
+ * Configure Buzzer pin as output pin
+ */
+void Buzzer_init(void);
+
+/*
+ * Description :
+ * put the Buzzer on work
+ */
+void Buzzer_on(void);
+
+/*
+ * Description :
+ * stop the Buzzer from working
+ */
+void Buzzer_off(void);
+
+
+#endif /* BUZZER */

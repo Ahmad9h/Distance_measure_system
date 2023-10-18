@@ -1,0 +1,17 @@
+/*****************************************************************************
+ *
+ * output_unit.c
+ *
+ *  Created on: Oct 16, 2023
+ *
+ *  Author: Ahmad Hamdy
+ *
+ *****************************************************************************/
+
+#include "gpio.h"
+#include "output_unit.h"
+
+void Buzzer_init(void){
+	GPIO_setupPinDirection(BUZZER_PORT_ID, BUZZER_PIN_ID, PIN_OUTPUT);
+	GPIO_setupPinDirection(PORTC_ID, PIN5_ID, PIN_OUTPUT);
+}

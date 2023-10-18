@@ -1,0 +1,40 @@
+22:53:59 **** Incremental Build of configuration Debug for project DMS_Eta32_mini ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DMS_Eta32_mini.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DMS_Eta32_mini.map -mmcu=atmega32 -o "DMS_Eta32_mini.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./output_unit.o ./ultrasonic.o   
+Finished building target: DMS_Eta32_mini.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DMS_Eta32_mini.elf  >"DMS_Eta32_mini.lss"
+Finished building: DMS_Eta32_mini.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DMS_Eta32_mini.elf  "DMS_Eta32_mini.hex"
+Finished building: DMS_Eta32_mini.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DMS_Eta32_mini.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12166 bytes (37.1% Full)
+(.text + .data + .bootloader)
+
+Data:         33 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:54:00 Build Finished. 0 errors, 1 warnings. (took 1s.58ms)
+

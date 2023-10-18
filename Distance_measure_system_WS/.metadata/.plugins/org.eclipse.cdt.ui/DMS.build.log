@@ -1,0 +1,20 @@
+22:53:59 **** Incremental Build of configuration Debug for project DMS ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DMS.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8970 bytes (27.4% Full)
+(.text + .data + .bootloader)
+
+Data:         33 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:53:59 Build Finished. 0 errors, 0 warnings. (took 289ms)
+
