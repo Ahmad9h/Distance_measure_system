@@ -30,7 +30,7 @@ The GPIO driver facilitates control over the general-purpose input/output pins o
 The ICU (Input Capture Unit) driver plays a crucial role in interfacing with the ATmega32's Input Capture peripheral. This driver is used to configure the ultrasonic sensor interface. Specifically, the ICU should be configured with a frequency of F_CPU/8 and set to detect the rising edge as the first edge. The ICU initialization and callback functions should be called inside the Ultrasonic initialization function.
 
 ### LCD Driver
-The LCD driver is responsible for communicating with the 2x16 LCD. It's recommended to use the same LCD driver that has been implemented in your course, employing an 8-bits data mode. Connect the LCD control pins and data pins as per the project requirements:
+The LCD driver is responsible for communicating with the 2x16 LCD. It's recommended to use the same LCD driver that has been implemented in your course, employing an 4-bits data mode. Connect the LCD control pins and data pins as per the project requirements:
 
 ### Ultrasonic Driver
 The Ultrasonic driver is a custom driver created specifically for this project. It uses the ATmega32 ICU driver to interface with the HC-SR04 ultrasonic sensor. This driver offers several functions:
