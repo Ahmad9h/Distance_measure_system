@@ -1,17 +1,15 @@
- /******************************************************************************
+/*****************************************************************************
  *
- * Module: ICU
+ * icu.h
  *
- * File Name: icu.h
+ *  Created on: Oct 15, 2023
  *
- * Description: Header file for the AVR ICU driver
+ *  Author: Ahmad Hamdy
  *
- * Author: Mohamed Tarek
- *
- *******************************************************************************/
+ *****************************************************************************/
 
-#ifndef ICU_H_
-#define ICU_H_
+#ifndef ICU
+#define ICU
 
 #include "std_types.h"
 
@@ -72,4 +70,4 @@ void ICU_clearTimerValue(void);
  */
 void ICU_deInit(void);
 
-#endif /* ICU_H_ */
+#endif /* ICU */
