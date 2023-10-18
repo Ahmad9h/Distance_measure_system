@@ -12,3 +12,6 @@
 - We utilized familiar GPIO, ICU, and LCD drivers from our training.
 - The ICU driver is expertly configured for precision and accuracy.
 - The Ultrasonic driver features key functions for seamless measurement.
+
+### software snap:
+![image](https://github.com/Ahmad9h/Distance_measure_system/assets/146341346/d5aa470d-ef66-4bd8-a080-1dcc74cd6fbf)
